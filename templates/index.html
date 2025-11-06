@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartNestSwap</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            direction: rtl;
+            text-align: center;
+            background: #f3f3f3;
+            padding: 50px;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        input, button {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #4A60E1;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background: #3d50c7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>SmartNestSwap</h2>
+    <p>حدد موقع عملك لنقترح عليك أفضل مناطق السكن المناسبة لك.</p>
+
+    <form action="/suggest" method="post">
+        <input type="text" name="work_location" placeholder="أدخل موقع عملك أو اسم الجهة" required>
+        <button type="submit">اقترح مناطق سكن</button>
+    </form>
+</div>
+
+</body>
+</html>
