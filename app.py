@@ -10,7 +10,7 @@ def home():
 def suggest():
     work_location = request.form.get("work_location")
 
-    # مبدئياً: نرجع رسالة فقط للتأكد أن الإدخال يعمل
+    # هنا منطق الاقتراح لاحقاً
     return f"<h2>✅ تم استلام موقع العمل: {work_location}</h2>"
 
 if __name__ == "__main__":
